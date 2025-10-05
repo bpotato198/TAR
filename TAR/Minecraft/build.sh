@@ -5,13 +5,13 @@ Type=Application
 Version=1.0
 Name=Minecraft Launcher
 Comment=Official Minecraft Launcher
-Path=/usr/games/minecraft
+Path=~/minecraft
 Exec=minecraft-launcher
 Terminal=false
 Categories=Game;
 EOF
 
-sudo mkdir /usr/games/minecraft && sudo cp minecraft-launcher /usr/games/minecraft && sudo cp minecraft.desktop ~/.local/share/applications/ && chmod +x ~/.local/share/applications/minecraft.desktop
+mkdir -p minecraft ~/ && cp minecraft-launcher ~/minecraft && sudo cp minecraft.desktop ~/.local/share/applications/ && chmod +x ~/.local/share/applications/minecraft.desktop
 
 
 
